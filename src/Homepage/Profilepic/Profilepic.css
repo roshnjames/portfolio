@@ -1,0 +1,29 @@
+.profilepic-pic {
+    border: 10px solid transparent;
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    background: linear-gradient(45deg, red, yellow, green, blue, purple);
+    background-size: 300% 300%;
+    animation: animateBorder 4s infinite linear;
+  }
+  
+  @keyframes animateBorder {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+.profilepic_main{
+    margin-top: 26vh;
+    margin-right:20vw;
+    margin-left: auto;
+    height: auto;
+    width: fit-content;
+}
