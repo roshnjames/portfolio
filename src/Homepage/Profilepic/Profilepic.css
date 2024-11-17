@@ -3,9 +3,10 @@
     border-radius: 50%;
     height: 350px;
     width: 350px;
-    background: linear-gradient(45deg, red, yellow, green, blue, purple);
+    background: linear-gradient(45deg, rgb(1, 1, 14), rgb(30, 135, 248),rgb(2, 2, 29), rgb(24, 247, 195),  rgb(3, 6, 22));
     background-size: 300% 300%;
-    animation: animateBorder 4s infinite linear;
+    animation: animateBorder 8s infinite linear;
+    transition: transform 1s ease-in-out;
   }
   
   @keyframes animateBorder {
@@ -19,10 +20,13 @@
       background-position: 0% 50%;
     }
   }
-  
+
+.profilepic-pic:hover{
+    transform:scale(1.15,1.15);
+}
 .profilepic_main{
     margin-top: 26vh;
-    margin-right:20vw;
+    margin-right:18vw;
     margin-left: auto;
     height: auto;
     width: fit-content;

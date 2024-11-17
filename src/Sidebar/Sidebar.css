@@ -1,0 +1,29 @@
+.sidebar-main{
+    width:13vw;
+    max-width: 18vw;
+    height:auto;
+    overflow: hidden;
+    position:fixed;
+    border: none;
+    border-radius: 40px;
+    color:whitesmoke ;
+    background-color:rgb(4, 5, 71);
+    top:10px;
+    left:10px;
+    bottom:10px;
+}
+
+.sidebar-main:hover{
+    background-color: rgb(13, 14, 83);
+    box-shadow: -3px 0px 4px rgb(42, 2, 242);
+    border:0.5px solid darkblue;
+    transition: 0.5s ease;
+}
+
+.sidebar-content{
+    margin-top:30px;
+    padding:110px 30px;
+}
+.sidebar-content > * {
+    margin-bottom: 20px; /* Space between each child element */
+  }

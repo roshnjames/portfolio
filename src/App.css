@@ -8,6 +8,8 @@
   border:1.5px solid rgb(40, 40, 251);
   padding:1px;
   box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
 }
 .App:hover{
   cursor:crosshair;
@@ -35,4 +37,33 @@
   100% {
     background-position: 100% 0%; /* End gradient fully to the right */
   }
+}
+
+.button-app-left{
+  width:30px;
+  height:30px;
+  margin-bottom:auto;
+  position:absolute;
+  z-index:10;
+  margin-top:8vh;
+  margin-left:6vw;
+  border:none;
+  border-radius: 5px;
+  background-color: none;
+}
+.button-app-right{
+  width:35px;
+  height:35px;
+  margin-bottom:auto;
+  position:absolute;
+  z-index:10;
+  top:5vh;
+  right:3vw;
+  border:none;
+  border-radius: 5px;
+  background-color: none;
+}
+
+.button-app-left,.button-app-right:hover{
+  cursor:pointer;
 }

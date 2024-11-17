@@ -1,5 +1,5 @@
 .writer-text{
-    font-size: 3em;
+    font-size: 4em;
     color:aliceblue;
     font-weight: bolder;
     font-family:'Courier New', Courier, monospace;
@@ -7,10 +7,10 @@
     height:auto;
     width: 35vw ;
     position: fixed;
-    margin-top: 37vh;
+    margin-top: 42vh;
     margin-left:15vw;
 }
 
 .writer-span{
-    animation: "blink 0.7s infinite"
+    animation: blink 1s infinite;
 }

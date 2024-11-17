@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import './Typewriter.css';
 
 const Typewriter = () => {
-  const textArray = ["hi!", "hello!"]; // Texts to display
+  const textArray = ["hi...","i am Roshin", "developer!"]; // Texts to display
   const [text, setText] = useState(""); // Current text being displayed
   const [isDeleting, setIsDeleting] = useState(false); // Flag to check if deleting
   const [loopIndex, setLoopIndex] = useState(0); // Index of the current text
@@ -43,7 +43,7 @@ const Typewriter = () => {
     <div className="writer-text">
       {text}<br/>
       <span className='writer-span' >
-        Roshin here...
+        
       </span>
     </div>
   );
