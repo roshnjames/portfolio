@@ -22,12 +22,32 @@
 }
 
 .sidebar-content{
-    margin-top:30px;
-    padding:110px 30px;
+    padding-top:70%;
+    margin-right:30%;
 }
-.sidebar-content > * {
-    margin-bottom: 20px; /* Space between each child element */
-  }
+
+
+nav ul li{
+    list-style-type:none;
+    margin-bottom:20px;
+
+    border-bottom: 1.5px solid rgb(4, 4, 136);
+    padding:5px 0px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.19em;
+    font-family:sans-serif;
+    font-weight: bolder;
+    color:rgb(0, 0, 255);
+}
+
+
+
+
+
+
 
 /* media queries */
 /* smartphone */

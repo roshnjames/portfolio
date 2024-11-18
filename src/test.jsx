@@ -2,7 +2,7 @@ import React from 'react'
 
 const Test = () => {
   return (
-    <div style={{alignItems:'center',backgroundColor:'white',height:'100vh'}}>
+    <div style={{margin:'auto',color:'white'}}>
       hello its a test
     </div>
   )
