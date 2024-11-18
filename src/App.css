@@ -44,21 +44,9 @@
   height:30px;
   margin-bottom:auto;
   position:absolute;
-  z-index:10;
+  z-index:20000;
   margin-top:8vh;
   margin-left:6vw;
-  border:none;
-  border-radius: 5px;
-  background-color: none;
-}
-.button-app-right{
-  width:35px;
-  height:35px;
-  margin-bottom:auto;
-  position:absolute;
-  z-index:10;
-  top:5vh;
-  right:3vw;
   border:none;
   border-radius: 5px;
   background-color: none;

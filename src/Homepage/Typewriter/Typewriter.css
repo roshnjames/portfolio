@@ -19,15 +19,17 @@
 
 
 /* media queries */
+/* smartphone */
 @media all and (max-width:460px){
     .writer-text{
-        font-size: 2em;
+        font-size: 2.3em;
         width: 75vw ;
         margin-top: 57vh;
-        margin-left: 23vw;
+        margin-left: 18vw;
     }
     
 }
+/* tablet */
 @media all and (min-width:460px) and (max-width:810px) {
     .writer-text{
         font-size: 3em;

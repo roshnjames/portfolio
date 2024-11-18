@@ -11,6 +11,7 @@
     top:10px;
     left:10px;
     bottom:10px;
+    z-index:10000;
 }
 
 .sidebar-main:hover{
@@ -27,3 +28,19 @@
 .sidebar-content > * {
     margin-bottom: 20px; /* Space between each child element */
   }
+
+/* media queries */
+/* smartphone */
+@media all and (max-width:460px){
+    .sidebar-main{
+        width:38vw;
+        max-width: 40vw;
+    }
+}
+/* tablet */
+@media all and (min-width:460px) and (max-width:810px){
+    .sidebar-main{
+        width:30vw;
+        max-width: 30vw;
+    }
+}

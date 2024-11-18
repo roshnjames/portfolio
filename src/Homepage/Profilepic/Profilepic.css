@@ -7,7 +7,6 @@
     background-size: 300% 300%;
     animation: animateBorder 8s infinite linear;
     transition: transform 1s ease-in-out;
-    z-index: 10;
   }
   
   @keyframes animateBorder {
@@ -26,7 +25,7 @@
     transform:scale(1.15,1.15);
 }
 .profilepic_main{
-    margin-top: 16vh;
+    margin-top: 23vh;
     margin-right:18vw;
     margin-left: auto;
     height: auto;
@@ -43,8 +42,8 @@
     margin-right:7vw;
   }
   .profilepic_main{
-    margin-top: 23vh;
-    align-items: center;
+    margin-top: 25vh;
+
 }
 }
 /* tablets */
@@ -56,4 +55,7 @@
     margin-top: 9vh;
     margin-right:11vw;
   }
+  .profilepic_main{
+    margin-top: 17vh;
+}
 }

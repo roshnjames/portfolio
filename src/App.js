@@ -21,7 +21,10 @@ function App() {
 
     <div className="App">
       <Homepage />
-      <img onClick={showSidebar} className='button-app-left' src={sidebar?menuclose:menubar} alt='logo'/>
+      <img onClick={showSidebar} className='button-app-left'
+          style={window.innerWidth<811 ?window.innerWidth<460?{marginLeft:sidebar  && '15vw'}:{marginLeft:sidebar  && '13vw'}:undefined}
+          src={sidebar?menuclose:menubar} alt='logo'
+      />
       {sidebar && <Sidebar />}
     </div>
   );
