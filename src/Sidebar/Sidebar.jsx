@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import github from '../assets/icons/github.png'
+import linkedin from '../assets/icons/linkedin.png'
 import './Sidebar.css'
 
 const Sidebar = () => {
@@ -20,6 +22,15 @@ const Sidebar = () => {
             </ul>
           </nav>
 
+      </div>
+      <div className='external-links'>
+        <a href="https://www.linkedin.com/in/roshnjames">
+            <img src={linkedin} alt="in" className='external-logo'/>
+        </a>
+        <a href="https://www.github.com/roshnjames">
+            <img src={github} alt="in" className='external-logo'/>
+        </a>
+        
       </div>
 
     </div>
