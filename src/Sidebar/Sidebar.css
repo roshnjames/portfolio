@@ -23,16 +23,16 @@
 
 .sidebar-content{
     padding-top:70%;
-    margin-right:30%;
 }
-
 
 nav ul li{
     list-style-type:none;
     margin-bottom:20px;
-
-    border-bottom: 1.5px solid rgb(4, 4, 136);
+    border-bottom: 0.01px solid rgb(4, 4, 136);
     padding:5px 0px;
+}
+nav ul li:hover{
+    border-bottom: 3.5px outset rgb(3, 3, 222);
 }
 
 nav ul li a{
@@ -40,7 +40,13 @@ nav ul li a{
     font-size: 1.19em;
     font-family:sans-serif;
     font-weight: bolder;
-    color:rgb(0, 0, 255);
+    color:rgb(90, 90, 243);
+}
+nav ul li a:hover{
+    color:rgb(192, 192, 239);
+}
+nav ul li a:active{
+    color:rgb(10, 153, 192);
 }
 
 
@@ -53,8 +59,8 @@ nav ul li a{
 /* smartphone */
 @media all and (max-width:460px){
     .sidebar-main{
-        width:38vw;
-        max-width: 40vw;
+        width:45vw;
+        max-width: 45vw;
     }
 }
 /* tablet */
