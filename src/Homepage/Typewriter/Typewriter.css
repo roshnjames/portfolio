@@ -9,8 +9,31 @@
     position: fixed;
     margin-top: 42vh;
     margin-left:15vw;
+    overflow: none;
 }
 
 .writer-span{
     animation: blink 1s infinite;
+}
+
+
+
+/* media queries */
+@media all and (max-width:460px){
+    .writer-text{
+        font-size: 2em;
+        width: 75vw ;
+        margin-top: 57vh;
+        margin-left: 23vw;
+    }
+    
+}
+@media all and (min-width:460px) and (max-width:810px) {
+    .writer-text{
+        font-size: 3em;
+        width: 75vw ;
+        margin-top: 60vh;
+        margin-left: 23vw;
+    }
+    
 }

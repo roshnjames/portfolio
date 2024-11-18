@@ -2,3 +2,9 @@
     display: flex;
     flex-direction: column;
 }
+
+@media all and (max-width:460px){
+    .homepage-main{
+        flex-direction: row;
+    }
+}
