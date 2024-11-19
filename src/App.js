@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 
 //file imports
 import './App.css';
+import Experience from './Experience/Experience.jsx';
 import Homepage from './Homepage/Homepage.jsx';
 import Sidebar from './Sidebar/Sidebar.jsx';
 import Test from './test.jsx';
@@ -48,11 +49,14 @@ function App() {
           src={sidebar?menuclose:menubar} alt='logo'
       />
 
+    {sidebar && <Sidebar />}
+
       <Routes>
           <Route path='/' element={<Homepage />} />
+          <Route path='/exp' element={<Experience />} />
           <Route path='/test' element={<Test />} />
       </Routes>
-      {sidebar && <Sidebar />}
+      
 
 
     </div>

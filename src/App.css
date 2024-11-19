@@ -52,6 +52,6 @@
   background-color: none;
 }
 
-.button-app-left,.button-app-right:hover{
+.button-app-left:hover{
   cursor:pointer;
 }
