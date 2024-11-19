@@ -79,12 +79,23 @@ a{
     .sidebar-main{
         width:45vw;
         max-width: 45vw;
+        border:2px solid blue;
+    }
+    .sidebar-main:hover{
+        border:2px solid blue;
+    }
+    nav ul li a{
+        color:rgb(139, 139, 212);
     }
 }
 /* tablet */
-@media all and (min-width:460px) and (max-width:810px){
+@media all and (min-width:460px) and (max-width:830px){
     .sidebar-main{
         width:30vw;
         max-width: 30vw;
+        border:1px solid blue;
+    }
+    .sidebar-main:hover{
+        border:2px solid blue;
     }
 }

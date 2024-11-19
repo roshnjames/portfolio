@@ -47,7 +47,7 @@
 }
 }
 /* tablets */
-@media all and (min-width:460px) and (max-width:810px){
+@media all and (min-width:460px) and (max-width:830px){
   .profilepic-pic {
     border: 8.5px solid transparent;
     height: 300px;

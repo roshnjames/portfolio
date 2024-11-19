@@ -30,7 +30,7 @@
     
 }
 /* tablet */
-@media all and (min-width:460px) and (max-width:810px) {
+@media all and (min-width:460px) and (max-width:830px) {
     .writer-text{
         font-size: 3em;
         width: 75vw ;

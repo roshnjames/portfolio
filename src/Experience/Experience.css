@@ -14,6 +14,8 @@
     box-shadow: -2px 2px 1.5cap rgb(5, 30, 142);
     display:flex;
     overflow:scroll;
+    flex-grow: 0;
+    flex-shrink: 0;
     flex-direction: row;
 }
 .exp-main-div::-webkit-scrollbar {
@@ -26,6 +28,9 @@
     border-radius: 100%;
     width: 80%;
 }
+.exp-main-div::-webkit-scrollbar-thumb {
+    cursor: pointer;
+}
 
 .exp-main-div::-webkit-scrollbar-track {
     background: #010005;
@@ -35,8 +40,26 @@
     color:#010005
 }
 
-@media all and (max-width:460){
+@media all and (max-width:460px){
     .exp-main-div{
+        left:18%;
+        top:3%;
+        padding:2% 2% 2% 2%;
+        width:73%;
+        height:auto;
+        min-height: 85%;
+        flex-direction: column;
+    }
+}
+
+@media all and (min-width:460px) and (max-width:830px){
+    .exp-main-div{
+        left:18%;
+        top:3%;
+        padding:2% 2% 2% 2%;
+        width:73%;
+        height:auto;
+        min-height: 87%;
         flex-direction: column;
     }
 }
