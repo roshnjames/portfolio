@@ -41,6 +41,36 @@
 }
 
 
+.Card{
+    margin-top: 2.5%;
+    margin-left:1.5%;
+    background-color: rgb(8, 8, 73);
+    height: 75%;
+    max-height: 75%;
+    width: 30%;
+    max-width: 40%x;
+    border-radius: 25px;
+    
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.4s;
+    position:relative;
+    overflow:auto;
+    display:flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  
+
+  
+  .Card:hover{
+      border: 0.1px solid rgb(156, 193, 209);
+      background-color: rgb(6, 23, 61);
+      transform: scale(1.2,1.2);
+      box-shadow: -2px 2px 1.5cap rgb(9, 43, 193);
+      z-index:10000;
+  }
+
 .heading-banner {
     left: 6vw;
     top: 50vh; /* Start far above the visible screen */
@@ -86,10 +116,44 @@
         top:3%;
         padding:2% 2% 2% 2%;
         width:73%;
-        height:auto;
-        min-height: 85%;
+        min-height: 89%;
         flex-direction: column;
     }
+    .Card {
+        margin-top: 3.5%;
+        margin-left: 1.5%;
+        height: 65%;
+        max-height: 75%;
+        width: 90%;
+        border-radius: 25px;
+        padding: 10px;
+        overflow: hidden;
+    }
+    
+    .Card:hover {
+        width: 80%; 
+        height: 60%;
+        transform: translate(-50%, -50%) scale(1, 1); /* Scale and center */
+        position: fixed; /* Fixed positioning to center it on the viewport */
+        top: 50%; /* Vertically center */
+        left: 48%; /* Horizontally center */
+        z-index: 100000; /* Bring to the top */
+    }
+    @keyframes dropBanner {
+        0% {
+            top: 0vh; /* Start far above */
+            opacity: 0; /* Invisible at the start */
+        }
+        50%{
+            top:42vh;
+            opacity: 0.5;
+        }
+        100% {
+            top: 30vh; /* Final position */
+            opacity: 1; /* Fully visible */
+        }
+    }
+    
 }
 
 @media all and (min-width:460px) and (max-width:830px){
@@ -98,8 +162,43 @@
         top:3%;
         padding:2% 2% 2% 2%;
         width:73%;
-        height:auto;
         min-height: 87%;
         flex-direction: column;
     }
+    .Card {
+        margin-top: 3.5%;
+        margin-left: 1.5%;
+        height: 65%;
+        max-height: 75%;
+        width: 90%;
+        border-radius: 25px;
+        padding: 10px;
+    }
+    .Card:hover {
+        width: 85%;
+        height: 75%;
+        transform: translate(-50%, -50%) scale(1, 1);
+        position: fixed;
+        top: 50%;
+        left: 49%;
+        z-index: 30000;
+    }
+    @keyframes dropBanner {
+        0% {
+            top: 0vh; /* Start far above */
+            opacity: 0; /* Invisible at the start */
+        }
+        50%{
+            top:45vh;
+            opacity: 0.5;
+        }
+        100% {
+            top: 30vh; /* Final position */
+            opacity: 1; /* Fully visible */
+        }
+    }
+    .heading-text{
+        font-size:3.5em;
+    }
+    
 }
