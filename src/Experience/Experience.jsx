@@ -7,7 +7,7 @@ const Experience = () => {
     //add experiences in this array
     const experiences=[
         {
-            company:"Tata Elxsi",
+            company:"Tata Elxsi Limited",
             position:"Intern",
             time:"March 24 - July 24",
             location:"Trivandrum",
@@ -52,11 +52,11 @@ const Experience = () => {
                         <li>{exp.location}</li>
                     </ul>
 
-                    <div className='index'>
+       
+                </div>
+                <div className='index'>
                             {index+1}
                 </div>
-                </div>
-           
             </div>
         ))}
 
