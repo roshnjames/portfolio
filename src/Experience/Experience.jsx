@@ -1,8 +1,19 @@
 import React from 'react'
+import elxsi from '../assets/experience/elxsi.jpg'
 import './Experience.css'
 
-
 const Experience = () => {
+    //add experiences in this array
+    const experiences=[
+        {
+            company:"Tata Elxsi",
+            position:"Intern",
+            time:"March 24 - July 24",
+            location:"Trivandrum",
+            image:elxsi,
+        }
+    ]
+    //add experiences in the above array
     const heading="experience".split('')
 
   return (
@@ -16,24 +27,23 @@ const Experience = () => {
 
 
     <div className='exp-main-div'>
-        <div className='Card'>
-            from the exp page
-        </div>
-        <div className='Card'>
-            from the exp page
-        </div>
-        <div className='Card'>
-            from the exp page
-        </div>
-        <div className='Card'>
-            from the exp page
-        </div>
-        <div className='Card'>
-            from the exp page
-        </div>
-        <div className='Card'>
-            from the exp page
-        </div>
+
+
+        { experiences.map((exp,index)=>(
+            <div className='Card' key={index}>
+                <div className='bgpic-section' />
+
+                <div className='details-section'>
+                <ul key={index}>
+                    <li>{exp.company}</li>
+                    <li>{exp.position}</li>
+                    <li>{exp.time}</li>
+                    <li>{exp.location}</li>
+                </ul>
+                </div>
+            </div>
+        ))}
+
 
     </div>
     </>
