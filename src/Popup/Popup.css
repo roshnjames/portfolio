@@ -1,11 +1,66 @@
-.popup-main-div{
-    z-index:10000000;
-    background-color: rgb(13, 141, 155);
-    width:50vw;
-    height:65vh;
-    margin:auto;
-    border:5px solid rgb(34, 22, 117);
-    border-radius: 10%;
-    padding:5%;
-
-}
+.popup-main-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2100;
+    color: white;
+  }
+  
+  .popup-content {
+    position: relative;
+    height:auto;
+    max-height:85% ;
+    width: auto;
+    padding: 3.4%;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent overflow of content */
+  }
+  
+  .popup-content-doc {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Take up the full height of its parent */
+    margin-top: 10px;
+    display: flex;
+    background-color: rgb(90, 90, 173);
+    border: 1px solid white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent overflow of image */
+  }
+  
+  .popup-close-btn {
+    position: absolute;
+    top: 2%;    /* Adjust the top space from the top of the popup content */
+    right: 2%;  /* Adjust the right space from the right of the popup content */
+    color: red;
+    font-size: 3em;
+    background-color: inherit;
+    border:none;
+    font-weight: bolder;
+    font-family: monospace;
+    z-index: 500;
+    margin: 0;  /* Remove any unnecessary margin */
+  }
+  
+  
+  .popup-img {
+    max-height: 90%; /* Limit the image height to 90% of the container */
+    max-width: 90%;  /* Limit the image width to 90% of the container */
+    min-height: 50%; /* Ensure the image has a minimum height of 50% of the container */
+    min-width: 50%;  /* Ensure the image has a minimum width of 50% of the container */
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+    display: block;
+    margin: auto; /* Center the image within the container */
+  }
+  
