@@ -3,10 +3,10 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 
 //file imports
 import './App.css';
+import Education from './Education/Education.jsx';
 import Experience from './Experience/Experience.jsx';
 import Homepage from './Homepage/Homepage.jsx';
 import Sidebar from './Sidebar/Sidebar.jsx';
-import Test from './test.jsx';
 //image imports
 import menubar from './assets/icons/menubar.png';
 import menuclose from './assets/icons/menuclose.png';
@@ -54,7 +54,7 @@ function App() {
       <Routes>
           <Route path='/' element={<Homepage />} />
           <Route path='/exp' element={<Experience />} />
-          <Route path='/test' element={<Test />} />
+          <Route path='/edu' element={<Education />} />
       </Routes>
       
 
