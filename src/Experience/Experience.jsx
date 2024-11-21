@@ -44,20 +44,17 @@ const Experience = () => {
               style={{ backgroundImage: `url(${exp.image})` }}
             />
             <div className="details-section">
-              <ul style={{ listStyleType: 'square' }} key={index}>
-                <li>{exp.company}</li>
-                <li>{exp.position}</li>
-                <li>{exp.time}</li>
-                <li>{exp.location}</li>
-              </ul>
+                <ul key={index}>
+                    <li>{exp.company}</li>
+                    <li>{exp.position}</li>
+                    <li>{exp.time}</li>
+                    <li>{exp.location}</li>
+                </ul>
             </div>
             <div className="index">{index + 1}</div>
-            <button
-              className="doc-button"
-              onClick={() => showPopup(exp.docs)}
-            >
-              docs
-            </button>
+                <button className="doc-button" onClick={() => showPopup(exp.docs)}>
+                docs
+                </button>
           </div>
         ))}
         

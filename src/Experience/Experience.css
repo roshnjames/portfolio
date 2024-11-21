@@ -107,6 +107,10 @@
     position:absolute;
   }
   
+  ul{
+    list-style-type: square;
+    text-align: left;
+  }
 
   .doc-button{
     border:1px solid hsl(225, 65%, 80%);
@@ -190,12 +194,12 @@
     }
     
     .Card:hover {
-        width: 80%; 
+        width: 80%;
         height: 60%;
         transform: translate(-50%, -50%) scale(1, 1); /* Scale and center */
         position: fixed; /* Fixed positioning to center it on the viewport */
-        top: 50%; /* Vertically center */
-        left: 48%; /* Horizontally center */
+        top: 50%;
+        left: 48%;
         z-index: 100000; /* Bring to the top */
     }
     @keyframes dropBanner {
