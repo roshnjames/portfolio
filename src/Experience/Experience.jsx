@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import elxsi from '../assets/experience/elxsi.jpg';
 import elxsi_certificate from '../assets/experience/elxsi_certificate.png';
-import Popup from '../Popup/Popup.jsx'; // Import your Popup component
+import Popup from '../Popup/Popup.jsx';
 import './Experience.css';
 
 const Experience = () => {
@@ -14,14 +14,6 @@ const Experience = () => {
       location: 'Trivandrum',
       image: elxsi,
       docs:elxsi_certificate,
-    },
-    {
-      company: 'Tata Elxsi',
-      position: 'engineer',
-      time: 'March 24 - July 24',
-      location: 'Trivandrum',
-      image: elxsi_certificate,
-      docs:elxsi,
     },
   ];
 

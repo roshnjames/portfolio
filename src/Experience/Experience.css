@@ -109,10 +109,10 @@
   
 
   .doc-button{
-    border:2px solid hsl(225, 65%, 80%);
-    background-color: hsl(201, 84%, 40%);
+    border:1px solid hsl(225, 65%, 80%);
+    background-color: hsl(209, 51%, 30%);
     border-radius:10%;
-    color:#000000;
+    color:#070746;
     font-size: 1em;
     font-weight: bolder;
     font-family: monospace;
