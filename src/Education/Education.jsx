@@ -47,9 +47,9 @@ const Education = () => {
                     <div className='edu-parent-holder' key={index} >
                         <div className='edu-logo-holder' />
                         <div className='edu-content-holder'>
-                            <b>{edu.institution}</b>
-                            <p>{edu.course}</p>
-                            <small>{edu.year}</small>
+                            <b>{edu.institution}</b><hr/>
+                            <p>{edu.course}</p><hr/>
+                            <i>{edu.year}</i>
                         </div>
                     </div>
 
