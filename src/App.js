@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
-//file imports
+//file and Component imports
 import './App.css';
+import Certification from './Certification/Certification.jsx';
 import Education from './Education/Education.jsx';
 import Experience from './Experience/Experience.jsx';
 import Homepage from './Homepage/Homepage.jsx';
 import Sidebar from './Sidebar/Sidebar.jsx';
+
 //image imports
 import menubar from './assets/icons/menubar.png';
 import menuclose from './assets/icons/menuclose.png';
@@ -55,6 +57,7 @@ function App() {
           <Route path='/' element={<Homepage />} />
           <Route path='/exp' element={<Experience />} />
           <Route path='/edu' element={<Education />} />
+          <Route path='/certs' element={<Certification />} />
       </Routes>
       
 

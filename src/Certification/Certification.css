@@ -1,0 +1,84 @@
+.certs-main-div{
+    width:70%;
+    height:82%;
+    padding:2% 5% 2% 5%;
+    top:5%;
+    left:13%;
+    color:white;
+    flex-direction: row;
+    align-items: center;
+
+    border-radius:5%;
+    position: fixed;
+    background-color: inherit;
+    box-shadow: -2px 2px 1.5cap rgb(5, 30, 142);
+    display:flex;
+    overflow:auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+.certs-main-div::-webkit-scrollbar {
+    width: 1px;
+    border-radius:50%;
+}
+
+.certs-main-div::-webkit-scrollbar-thumb {
+    background-color: #1160b4;
+    border-radius: 100%;
+    width: 80%;
+}
+.certs-main-div::-webkit-scrollbar-thumb {
+    cursor: pointer;
+}
+
+.certs-main-div::-webkit-scrollbar-track {
+    background: #010005;
+    border-radius: 100%;
+}
+.certs-main-div::-webkit-scrollbar-corner{
+    color:#010005
+}
+
+
+
+
+
+/* heading of the page */
+.heading-banner {
+    left: 6vw;
+    top: 45vh; /* Adjusted to start slightly higher */
+    width: 2%;
+    border: 1px solid white;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    animation: dropBanner 2s ease-out forwards; /* Smooth drop animation */
+}
+
+@keyframes dropBanner {
+    0% {
+        top: 0vh; /* Start far above */
+        opacity: 0; /* Invisible at the start */
+    }
+    50% {
+        top: 30vh; /* Slightly higher intermediate position */
+        opacity: 0.5;
+    }
+    100% {
+        top: 15vh; /* Final position adjusted upwards */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.heading-text {
+    margin-top: -10px;
+    color: rgb(17, 254, 230);
+    font-size: 1em;
+    font-weight: bold;
+    font-family: monospace;
+    text-shadow: -2px 2px 2px rgb(1, 153, 255);
+}
