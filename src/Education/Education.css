@@ -19,11 +19,12 @@
 .edu-main-div::after {
     content: "";
     width: 2px;
-    height: calc(100% + 100px); /* add px to span the entire vertical length to contain newly added item */
+    height: calc(160%); /* add px to span the entire vertical length to contain newly added item */
     background-color: rgb(203, 228, 235);
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: 0%;
+    left: 27%;
+    z-index: -1;
 }
 
 .edu-main-div::-webkit-scrollbar {
@@ -48,6 +49,11 @@
     color:#010005
 }
 
+.edu-main-div b{
+    font-weight: bolder;
+    color:rgb(40, 160, 224);
+    font-family: monospace;
+}
 
 .heading-banner {
     left: 6vw;
@@ -91,7 +97,8 @@
     position:relative;
     width:45%;
     height:fit-content;
-    padding: 1%;
+    padding: 4%;
+    left:18.5%;
     /* background-color: rgb(23, 95, 13); */
     margin:10px;
 }
@@ -99,25 +106,39 @@
     background-color: rgb(6, 6, 112);
     border-radius:10px;
     display: flex;
-    width:85%;
+    width:100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     padding:3%;
-    border:1px solid rgb(9, 129, 165);
+    border:2px solid rgb(9, 129, 165);
     box-shadow: -1px 1px 1cap rgb(110, 110, 187);
     color:rgb(9, 192, 155);
+    margin-left:15%;
 }
+.edu-content-holder::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px; /* adjust to your liking */
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid rgb(9, 129, 165); /* match the color */
+    z-index: 1;
+  }
 
 .edu-logo-holder{
-    background-image: url('../assets/icons/education.png');
-    background-size: contain;
+    background-image: url('../assets/icons/goal.png');
     background-repeat: no-repeat;
     position:absolute;
-    top:30%;
-    height:45%;
-    width:15%;
+    border-radius: 50%;
+    background-position: center; /* add this to center the logo */
+    background-size: 100% 100%; /* change this to scale the logo */
+    top:37%;
+    height: 25%;
+    width: 9%;
     z-index:100;
 
 }

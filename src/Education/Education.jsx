@@ -6,12 +6,12 @@ const Education = () => {
         
         {
             institution:'College of Engineering Trivandrum,(CET)',
-            course:'MCA',
+            course:'Master of Computer Applications (MCA)',
             year:2024,
         },
         {
             institution:'Marian College, Kuttikkanam',
-            course:'BCA',
+            course:'Bachelor of Computer Applications (BCA)',
             year:2022,
         },
         {
@@ -42,10 +42,11 @@ const Education = () => {
             <div className='edu-main-div'>
 
                 {educations.map((edu,index)=>(
+                    
 
-                    <div className='edu-parent-holder' key={index} style={{left:`${(index+1)%2!==0?'0%':'48.5%'}`}}>
-                        <div className='edu-logo-holder' style={(index+1)%2!==0?{left:'90%'}:undefined}/>
-                        <div className='edu-content-holder' style={(index+1)%2!==0?{left:'0%'}:{left:'14%'}}>
+                    <div className='edu-parent-holder' key={index} >
+                        <div className='edu-logo-holder' />
+                        <div className='edu-content-holder'>
                             <b>{edu.institution}</b>
                             <p>{edu.course}</p>
                             <small>{edu.year}</small>
