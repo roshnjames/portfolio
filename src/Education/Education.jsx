@@ -2,6 +2,7 @@ import React from 'react'
 import './Education.css'
 
 const Education = () => {
+//add education in the below array
     const educations=[
         
         {
@@ -26,7 +27,7 @@ const Education = () => {
         },
     ]
 
-
+////////////////////////////////////////////
 
     const heading="education".split('')
 

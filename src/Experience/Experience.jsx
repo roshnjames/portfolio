@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import elxsi from '../assets/experience/elxsi.jpg';
-import elxsi_certificate from '../assets/experience/elxsi_certificate.png';
 import Popup from '../Popup/Popup.jsx';
 import './Experience.css';
+// file imports
+import elxsi from '../assets/experience/elxsi.jpg';
+import elxsi_certificate from '../assets/experience/elxsi_certificate.png';
 
 const Experience = () => {
   // Add experiences in this array
@@ -17,6 +18,7 @@ const Experience = () => {
     },
   ];
 
+  ////////////////////////////
   const heading = 'experience'.split('');
   const [popup, setPopup] = useState(false);
   const [doc,setDoc]=useState(null)
@@ -52,9 +54,11 @@ const Experience = () => {
                 </ul>
             </div>
             <div className="index">{index + 1}</div>
-                <button className="doc-button" onClick={() => showPopup(exp.docs)}>
-                docs
-                </button>
+                {exp.docs?
+                  <button className="doc-button" onClick={() => showPopup(exp.docs)}>
+                  docs
+                  </button>
+                :undefined}
           </div>
         ))}
         

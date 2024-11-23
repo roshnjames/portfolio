@@ -79,17 +79,22 @@
   }
 
   .certs-card .certs-details-section{
-    font-size:1.1em;
+    font-size:1em;
     font-weight: bold;
-    font-family:Times, serif;
+    font-family:monospace;
     color:rgb(13, 159, 221);
     margin:auto;
     position:relative;
-    height:calc(100% - 58%);
+    height:fit-content;
     width:80%;
-    padding:10%;
+    padding:2%;
     overflow: hidden;
   }
+
+.certs-card .certs-details-section ul li{
+    margin-bottom: 15px;
+}
+
 .certs-index{
     border:2px solid hsl(229, 54%, 39%);
     background-color: hsl(229, 54%, 39%);
@@ -105,6 +110,26 @@
     z-index:200;
     box-shadow: -0.2px 0.2px 0.3cap rgb(16, 225, 225);
     position:absolute;
+  }
+
+  .certs-doc-button{
+    border:1px solid hsl(225, 65%, 80%);
+    background-color: hsl(209, 51%, 30%);
+    border-radius:10%;
+    color:#070746;
+    font-size: 1em;
+    font-weight: bolder;
+    font-family: monospace;
+    height:7%;
+    width:20%;
+    right:9%;
+    bottom:5%;
+    z-index:100;
+    position:absolute;
+  }
+  .certs-doc-button:hover{
+    background-color: hsl(201, 84%, 60%);
+    cursor:pointer;
   }
 
 /* heading of the page */
