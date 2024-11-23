@@ -1,26 +1,28 @@
-import React from 'react'
-import './Certification.css'
-
+import React from 'react';
+import './Certification.css';
 
 const Certification = () => {
+  // Add experiences in this array
 
-  const heading='certifications.'.split('')
-
+  const heading='certs'.split('')
   return (
     <>
-      <div className='heading-banner'>
-          {heading.map((char,index)=>(
-              <span className='heading-text' key={index}>
-                {char}
-              </span>
-          ))}
+      <div className="heading-banner">
+        {heading.map((char, index) => (
+          <span className="heading-text" key={index}>
+            {char}
+          </span>
+        ))}
       </div>
 
-      <div className='certs-main-div'>
-          hello from certificates
+      <div className="certs-main-div">
+
+        hello form certified
+        
       </div>
+     
     </>
-  )
-}
+  );
+};
 
-export default Certification
+export default Certification;
