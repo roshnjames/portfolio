@@ -2,11 +2,13 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    left:0;
+    top:0;
+    background-color: rgba(8, 7, 7, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2100;
+    z-index: 9999;
   }
   
   .popup-content {
@@ -63,7 +65,9 @@
     pointer-events: none;
     margin: auto;
   }
-  
+  .popup-active .button-app-left {
+    display: none;
+  }
 
   /* media queries */
   /* smartphone */
@@ -74,6 +78,7 @@
         width: auto;
         max-width: 95%;
         border-radius: 5px;
+        z-index: inherit;
       }
       .popup-close-btn {
         right: 10px;

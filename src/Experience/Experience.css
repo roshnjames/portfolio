@@ -200,7 +200,7 @@
         position: fixed; /* Fixed positioning to center it on the viewport */
         top: 50%;
         left: 48%;
-        z-index: 100000; /* Bring to the top */
+        z-index: 1000; /* Bring to the top */
     }
     @keyframes dropBanner {
         0% {

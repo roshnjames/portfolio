@@ -7,9 +7,10 @@ import c from '../assets/certification/wallpaper/c.png';
 import dbms from '../assets/certification/wallpaper/dbms.png';
 import java from '../assets/certification/wallpaper/java.png';
 import js from '../assets/certification/wallpaper/js.png';
+import python from '../assets/certification/wallpaper/python.jpeg';
 
 // certificates imports
-import java_crash from '../assets/certification/certificates/java_crash.jpeg';
+import java_crash from '../assets/certification/certificates/java_crash.jpg';
 import java_oop from '../assets/certification/certificates/java_oop.png';
 import js_beg from '../assets/certification/certificates/javascript_crash.png';
 import nptel_c from '../assets/certification/certificates/nptel_c.png';
@@ -29,7 +30,7 @@ const Certification = () => {
     },
     {
       course:'Java for programmers',
-      issuer:'NPTEL-IIT Kharagpur',
+      issuer:'Udemy',
       date:'Sept 23',
       wallpaper:java,
       doc:java_crash
@@ -43,7 +44,7 @@ const Certification = () => {
     },
     {
       course:'Data base management system',
-      issuer:'Udemy',
+      issuer:'NPTEL-IIT Kharagpur',
       date:'Sept 23',
       wallpaper:dbms,
       doc:nptel_dbms
@@ -54,6 +55,13 @@ const Certification = () => {
       date:'Oct 23',
       wallpaper:c,
       doc:nptel_c
+    },
+    {
+      course:'Functional programming with python',
+      issuer:'Linkedin',
+      date:'Mar 24',
+      wallpaper:python,
+      doc:null
     }
   ]
 ////////////////////////////////

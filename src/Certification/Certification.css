@@ -57,6 +57,7 @@
     overflow:auto;
     flex-grow: 0;
     flex-shrink: 0;
+    z-index: -1;
   }
   
   .certs-card:hover{
@@ -198,7 +199,7 @@
         position: fixed; /* Fixed positioning to center it on the viewport */
         top: 50%;
         left: 48%;
-        z-index: 100000; /* Bring to the top */
+        z-index: 2000; /* Bring to the top */
     }
 
     @keyframes certsdropBanner {
@@ -215,6 +216,13 @@
             opacity: 1; /* Fully visible */
         }
     }
+    .certs-index{
+        background-color: hsl(256, 30%, 30%);
+        height:12%;
+        width:20%;
+        left:4%;
+        bottom:3%;
+      }
 
     
 }
@@ -244,7 +252,7 @@
         position: fixed;
         top: 50%;
         left: 49%;
-        z-index: 30000;
+        z-index: 2000;
     }
     @keyframes certsdropBanner {
         0% {
