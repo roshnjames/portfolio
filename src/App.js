@@ -49,6 +49,8 @@ function App() {
       <img onClick={(e)=>{e.stopPropagation(e);showSidebar()}} id='sidebar-button' className='button-app-left'
           style={window.innerWidth<811 ?window.innerWidth<460?{marginLeft:sidebar  && '20vw'}:{marginLeft:sidebar  && '13vw'}:undefined}
           src={sidebar?menuclose:menubar} alt='logo'
+          draggable={false}
+          onContextMenu={(e)=>e.preventDefault()}
       />
 
     {sidebar && <Sidebar />}
