@@ -8,9 +8,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
+    z-index: 19999;
+  }
+
+  .popup-active .button-app-left {
+    display: none;
   }
   
+
   .popup-content {
     position: relative;
     height: auto;
@@ -21,6 +26,7 @@
     border-radius: 5px;
     justify-content: flex-start;
     align-items: center;
+    z-index: inherit;
 }
 
 .popup-close-btn {
@@ -33,7 +39,7 @@
     border: none;
     font-weight: bolder;
     font-family: monospace;
-    z-index: 500;
+    z-index: inherit;
     cursor: pointer;
 }
 
@@ -52,7 +58,7 @@
     align-items: center;
     overflow:auto;
     margin-top: 35px;
-    z-index: 1;
+    z-index: inherit;
 }
 
   .popup-img {
@@ -64,9 +70,7 @@
     display: block;
     pointer-events: none;
     margin: auto;
-  }
-  .popup-active .button-app-left {
-    display: none;
+    z-index: inherit;
   }
 
   /* media queries */
@@ -78,7 +82,6 @@
         width: auto;
         max-width: 95%;
         border-radius: 5px;
-        z-index: inherit;
       }
       .popup-close-btn {
         right: 10px;
