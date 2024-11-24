@@ -7,7 +7,9 @@ import Certification from './Certification/Certification.jsx';
 import Education from './Education/Education.jsx';
 import Experience from './Experience/Experience.jsx';
 import Homepage from './Homepage/Homepage.jsx';
+import Project from './Project/Project.jsx';
 import Sidebar from './Sidebar/Sidebar.jsx';
+
 
 //image imports
 import menubar from './assets/icons/menubar.png';
@@ -60,6 +62,7 @@ function App() {
           <Route path='/exp' element={<Experience />} />
           <Route path='/edu' element={<Education />} />
           <Route path='/certs' element={<Certification />} />
+          <Route path='/proj' element={<Project />} />
       </Routes>
       
 

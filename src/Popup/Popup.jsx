@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import '../App.css';
 import './Popup.css';
+
+
 const Popup = (props) => {
 
   useEffect(()=>{
@@ -10,10 +12,11 @@ const Popup = (props) => {
       document.body.classList.remove('popup-active');
     }
     return () => {
-      document.body.classList.remove('popup-active'); // Clean up on unmount
+      document.body.classList.remove('popup-active');
     };
 
   },[props.visible])
+
 
   return props.visible?(
     <div className="popup-main-div">

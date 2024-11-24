@@ -56,7 +56,7 @@ const Experience = () => {
             <div className="index">{index + 1}</div>
                 {exp.docs?
                   <button className="doc-button" onClick={() => showPopup(exp.docs)}>
-                  docs
+                  doc
                   </button>
                 :undefined}
           </div>

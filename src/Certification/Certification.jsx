@@ -106,7 +106,7 @@ const Certification = () => {
                 </div>
                 {cert.doc?
                     <button className="certs-doc-button" onClick={()=>showPopup(cert.doc)}>
-                      docs
+                      doc
                     </button>
                 :undefined}
             </div>
