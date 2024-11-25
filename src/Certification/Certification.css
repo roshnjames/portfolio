@@ -137,7 +137,7 @@
 .certs-heading-banner {
     left: 6vw;
     top: 50vh; /* Start far above the visible screen */
-    width: 2%;
+    width: fit-content;
     height: fit-content;
     position: relative;
     display: flex;
