@@ -81,7 +81,7 @@
   .Card .details-section{
     font-size:1.1em;
     font-weight: bold;
-    font-family:Times, serif;
+    font-family:monospace;
     color:rgb(13, 159, 221);
     margin:auto;
     position:relative;
@@ -110,6 +110,9 @@
   ul{
     list-style-type: square;
     text-align: left;
+  }
+  li{
+    margin-top:3%;
   }
 
   .doc-button{
