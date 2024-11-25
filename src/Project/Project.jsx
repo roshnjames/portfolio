@@ -64,14 +64,17 @@ const Project = () => {
 
       {projects.map((proj,index)=>(
          <div className="proj-card" key={index}>
-              <div className="card-index">{index+1}</div>
+              <div className="proj-card-index">{index+1}</div>
               <div className="proj-details-section">
                   <ul>
-                    <li>{proj.title}</li>
-                    <li>{proj.domain}</li>
-                    {proj.backend?<li>{proj.backend}</li>:undefined}
-                    {proj.frontend?<li>{proj.frontend}</li>:undefined}
-                    {proj.database?<li>{proj.database}</li>:undefined}
+                    <li><span>title</span><br/><h5>{proj.title}</h5></li>
+                    <li><span>domain</span><br/><i>{proj.domain}</i></li>
+                    {proj.backend?<li><span>backend</span><br/>{proj.backend}</li>:undefined}
+                    {proj.frontend?<li><span>{
+                          ['Machine Learning','machine learning','Machine learning'].includes(proj.domain)?'UI':'frontend'
+                          }</span><br/>{proj.frontend}
+                    </li>:undefined}
+                    {proj.database?<li><span>database</span><br/>{proj.database}</li>:undefined}
 
                   </ul>
               </div>
