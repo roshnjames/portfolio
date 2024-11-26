@@ -13,10 +13,11 @@ const Sidebar = () => {
          <nav>
             <ul>
             {loc !== '/' && <li><NavLink to='/'>home</NavLink></li>}
+            {loc !== '/about' && <li><NavLink to='/about'>about</NavLink></li>}
             {loc !== '/exp' && <li><NavLink to='/exp'>exp</NavLink></li>}
             {loc !== '/edu' && <li><NavLink to='/edu'>edu</NavLink></li>}
             {loc !== '/certs' && <li><NavLink to='/certs'>certs</NavLink></li>}
-            {loc !== '/proj' && <li><NavLink to='/proj'>proj</NavLink></li>}
+            {loc !== '/proj' && <li><NavLink to='/proj'>works</NavLink></li>}
             {loc !== '/test' && <li><NavLink to='/test'>oth</NavLink></li>}
 
             </ul>

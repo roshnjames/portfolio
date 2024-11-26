@@ -105,18 +105,24 @@
   }
 
   .proj-details-section{
+    background-image: url('../assets/Project/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-size:1em;
     font-weight: bold;
     font-family:monospace;
     color:rgb(13, 159, 221);
     margin:auto;
     top:13%;
-    position:relative;
+    position:absolute;
     height:65%;
     width:80%;
     padding:5% 10% 5% 10%;
     overflow: hidden;
     background-color: rgb(16, 45, 103);
+    border-top:0.1px solid rgb(67, 113, 169);
+    border-bottom: 0.1px solid rgb(67, 113, 169);
   }
 
 
@@ -156,7 +162,7 @@
   }
   .proj-card .proj-details-section ul li h5{
     color:rgb(131, 181, 231);
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top:0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }

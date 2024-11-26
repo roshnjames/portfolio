@@ -1,4 +1,4 @@
-import Profile from '../../assets/portfolio_profile.png'
+import Profile from '../../assets/pictures/portfolio_profile.png'
 import './Profilepic.css'
 
 import React from 'react'

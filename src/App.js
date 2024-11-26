@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
 //file and Component imports
+import About from './About/About.jsx';
 import './App.css';
 import Certification from './Certification/Certification.jsx';
 import Education from './Education/Education.jsx';
@@ -59,6 +60,7 @@ function App() {
 
       <Routes>
           <Route path='/' element={<Homepage />} />
+          <Route path='/about' element={<About />} />
           <Route path='/exp' element={<Experience />} />
           <Route path='/edu' element={<Education />} />
           <Route path='/certs' element={<Certification />} />
