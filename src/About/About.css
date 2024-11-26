@@ -1,0 +1,10 @@
+.about-image-holder{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left:auto;
+    width:28%;
+    height:99.5vh;
+    background-color: inherit;
+    border:1px solid rgb(9, 9, 112);
+}
