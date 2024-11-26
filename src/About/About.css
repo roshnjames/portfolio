@@ -1,3 +1,75 @@
+.about-page{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: fit-content;
+    min-height: 100vh;
+    margin-left: 9%;
+}
+
+.about-content-holder{
+    height:99vh;
+    width:calc(100vw - 28%);
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+
+.about-content-holder .about-me-header{
+    height:10%;
+    width:fit-content;
+    min-width:15%;
+    margin:8% 0% 3% 33%;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-content-holder .about-me-header .about-first-word{
+    position: relative;
+    height:100%;
+    background-color: rgb(19, 43, 140);
+    color:lightblue;
+    padding:0px 5px 0px 5px;
+    font-size: 3em;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-content-holder .about-me-header .about-second-word{
+    position:relative;
+    background-color: lightblue;
+    color:rgb(4, 4, 65);
+    padding:0px 5px 0px 5px;
+    font-size: 3em;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-content-holder .about-content-text{
+    height:38%;
+    width:70%;
+    margin:auto;
+    font-size: 1.3em;
+    font-family: monospace;
+    font-weight: bold;
+    padding:2%;
+    text-align: center;
+    color: rgb(38, 148, 179);
+}
+
+.about-content-holder .about-mail-copy{
+    margin-top:auto;
+    border:1px solid white;
+    position: relative;
+    height:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:lightblue;
+    display:flex;
+    flex-direction: row;
+}
+
+
 .about-image-holder{
     background-size: cover;
     background-position: center;
@@ -7,4 +79,6 @@
     height:99.5vh;
     background-color: inherit;
     border:1px solid rgb(9, 9, 112);
+    position: relative;
 }
+
