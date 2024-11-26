@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+import copy from '../assets/icons/copy.png'
+import tick from '../assets/icons/tick.png'
 import pic from '../assets/pictures/aboutme.png'
 import './About.css'
-import aboutme from './about.js'
+import about from './about.js'
+
+
 const About = () => {
+    const mail='roshinjames19@gmail.com'
+    const aboutme=about
+
+    const [copymail,setCopymail]=useState(false)
+    const copyMailid=()=>{
+        navigator.clipboard.writeText(mail)
+        setCopymail(true)
+    }
+
   return (
     <div className='about-page'>
         <div className="about-content-holder">
@@ -14,8 +27,9 @@ const About = () => {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{aboutme}
             </div>
             <div className="about-mail-copy">
-                contact me roshinjames19@gmail.com
-                <button>copy</button>
+                <span className='mail-title'>Contact me:</span>
+                <span className='mail-id'>{mail}</span>
+                <button className='copy-button' style={{backgroundImage:`url(${copymail?tick:copy})`}} onClick={()=>copyMailid()} />
             </div>
         </div>
 
