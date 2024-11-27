@@ -1,0 +1,14 @@
+.oth-main-div{
+    width:90vw;
+    min-height: 100vh;
+    height:fit-content;
+    padding:2% 5% 2% 5%;
+    border:1px solid white;
+    margin-left:9%;
+    align-items: center;
+    position: fixed;
+    background-color: inherit;
+    display:flex;
+    overflow:auto;
+    flex-direction: column;
+}

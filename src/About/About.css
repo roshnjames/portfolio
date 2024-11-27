@@ -32,6 +32,7 @@
     padding:0px 8px 0px 5px;
     font-size: 3em;
     font-weight: bolder;
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 .about-content-holder .about-me-header .about-second-word{
@@ -41,6 +42,7 @@
     padding:0px 5px 0px 5px;
     font-size: 3em;
     font-weight: bolder;
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
 

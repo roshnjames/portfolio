@@ -6,10 +6,28 @@ import './About.css'
 import about from './about.js'
 
 
-const About = () => {
+const About = ({appref}) => {
     const mail='roshinjames19@gmail.com'
-    const aboutme=about
+    const aboutme=about//from the about js page
 
+    //manage visibility of the scrollbar on scroll up for mobile devices
+    // useEffect(()=>{
+    //     const startpos=window.scrollY
+    //     const handleScroll=()=>{
+    //         let lastpos=window.scrollY
+    //         if (lastpos-startpos >= window.innerHeight/2){
+    //             appref.current.classList.remove('button-app-left');
+    //         }else{
+    //             appref.current.classList.add('button-app-left')
+    //         }
+    //     }
+    //     window.addEventListener('scroll',handleScroll)
+
+    //     return()=>{
+    //         window.removeEventListener('scroll',handleScroll)
+    //     }
+        
+    // },[appref])
 
     //mail copying with support for all browsers
     const [copymail,setCopymail]=useState(false)

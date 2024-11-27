@@ -18,7 +18,7 @@ const Sidebar = () => {
             {loc !== '/edu' && <li><NavLink to='/edu'>edu</NavLink></li>}
             {loc !== '/certs' && <li><NavLink to='/certs'>certs</NavLink></li>}
             {loc !== '/proj' && <li><NavLink to='/proj'>works</NavLink></li>}
-            {loc !== '/test' && <li><NavLink to='/test'>oth</NavLink></li>}
+            {loc !== '/oth' && <li><NavLink to='/oth'>oth</NavLink></li>}
 
             </ul>
           </nav>
