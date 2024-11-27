@@ -57,23 +57,28 @@ const About = () => {
 
   return (
     <div className='about-page'>
+        {/* for aligning the image at top of non desktop devices */}
+        {window.innerWidth<830?<div className='about-image-holder' style={{backgroundImage:`url(${pic})`}}/>:undefined}
+        
+     
         <div className="about-content-holder">
             <div className="about-me-header">
                 <span className='about-first-word'>About</span> <span className='about-second-word'>me</span>
             </div>
             <div className="about-content-text">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{aboutme}
+                &nbsp;&nbsp;&nbsp;&nbsp;{aboutme}
             </div>
             <div className="about-mail-copy">
                 <span className='mail-title'>Contact me</span>
-                <span className='mail-id'>{mail}</span>
-                <button className='copy-button' style={{backgroundImage:`url(${copymail?tick:copy})`}} onClick={()=>copyMailid()} />
+                <div className='about-mail-copy-holder'>
+                    <span className='mail-id'>{mail}</span>
+                    <button className='copy-button' style={{backgroundImage:`url(${copymail?tick:copy})`}} onClick={()=>copyMailid()} />
+                </div>
             </div>
         </div>
 
-        <div className='about-image-holder' style={{backgroundImage:`url(${pic})`}}/>
-     
+        {window.innerWidth>830?<div className='about-image-holder' style={{backgroundImage:`url(${pic})`}}/>:undefined}
     </div>
   )
 }

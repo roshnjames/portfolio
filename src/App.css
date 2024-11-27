@@ -55,3 +55,9 @@
 .button-app-left:hover{
   cursor:pointer;
 }
+
+@media all and (max-width:830px){
+  .App{
+    overflow:auto;
+  }
+}
