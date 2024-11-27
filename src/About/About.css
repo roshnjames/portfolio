@@ -92,9 +92,12 @@
     font-family: monospace;
     background-color: lightblue;
     color: rgb(1, 1, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right:2%;
     border: 1px solid orange;
-    border-radius: 3%; 
+    border-radius: 3%;
     width: fit-content;
     padding:1%;
 }
@@ -125,9 +128,9 @@
 
 
 /* media queries */
-/* smartphone */
+/* smartphone and tablet <1000px */
 
-@media all and (max-width:460px){
+@media all and (max-width:1000px){
     .about-page{
         margin:0px;
         flex-direction: column;
@@ -169,9 +172,8 @@
 
     .about-content-holder .about-me-header{
         height:13%;
-        max-height: 15%;
         margin:auto;
-        padding:10% 0% 13% 0%;
+        padding:13% 0% 13% 0%;
     }
 
     .about-content-holder .about-content-text{
@@ -187,7 +189,8 @@
     }
 
     .about-content-holder .about-mail-copy{
-        margin:20% ;
+        margin-top: 35%;
+        margin-bottom:30%;
         position: relative;
         height:15%;
         display: flex;

@@ -41,7 +41,8 @@ const About = () => {
         // Select the text and copy it
         textArea.focus();
         textArea.select();
-    
+
+
         try {
             const successful = document.execCommand("copy");
             if (successful)
@@ -58,7 +59,7 @@ const About = () => {
   return (
     <div className='about-page'>
         {/* for aligning the image at top of non desktop devices */}
-        {window.innerWidth<830?<div className='about-image-holder' style={{backgroundImage:`url(${pic})`}}/>:undefined}
+        {window.innerWidth<1000?<div className='about-image-holder' style={{backgroundImage:`url(${pic})`}}/>:undefined}
         
      
         <div className="about-content-holder">
@@ -78,7 +79,7 @@ const About = () => {
             </div>
         </div>
 
-        {window.innerWidth>830?<div className='about-image-holder' style={{backgroundImage:`url(${pic})`}}/>:undefined}
+        {window.innerWidth>1000?<div className='about-image-holder' style={{backgroundImage:`url(${pic})`}}/>:undefined}
     </div>
   )
 }
