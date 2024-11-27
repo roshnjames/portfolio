@@ -68,7 +68,7 @@
     justify-content: center;
     align-items: center;
     color:lightblue;
-    display:flex;
+
     flex-direction: row;
 }
 
@@ -191,20 +191,11 @@
     .about-content-holder .about-mail-copy{
         margin-top: 35%;
         margin-bottom:30%;
-        position: relative;
-        height:15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display:flex;
         flex-direction: column;
     }
     
     .about-content-holder .about-mail-copy .mail-title{
         font-size: 2em;
-        font-family:cursive;
-        font-weight: bold;
-        color:rgb(133, 48, 186);
         margin-bottom: 7%;
     }
 }
