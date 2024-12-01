@@ -60,7 +60,7 @@ function App() {
     {sidebar && <Sidebar />}
 
       <Routes>
-          <Route path='/portfolio' element={<Homepage />} />
+          <Route path='/portfolio/' element={<Homepage />} />
           <Route path='/about' element={<About />} />
           <Route path='/exp' element={<Experience />} />
           <Route path='/edu' element={<Education />} />

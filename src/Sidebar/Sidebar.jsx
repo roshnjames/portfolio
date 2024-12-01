@@ -12,7 +12,7 @@ const Sidebar = () => {
 
          <nav>
             <ul>
-            {loc !== '/' && <li><NavLink to='/'>home</NavLink></li>}
+            {loc !== '/portfolio/' && <li><NavLink to='/portfolio/'>home</NavLink></li>}
             {loc !== '/about' && <li><NavLink to='/about'>about</NavLink></li>}
             {loc !== '/exp' && <li><NavLink to='/exp'>exp</NavLink></li>}
             {loc !== '/edu' && <li><NavLink to='/edu'>edu</NavLink></li>}
