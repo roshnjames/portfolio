@@ -27,7 +27,7 @@ const Others = () => {
             <div className='oth-card'>
                 <div className='oth-bgpic-section' style={{backgroundImage:`url(${mailwallpaper})`}} />
                   <div className="oth-details-section">
-                    <button className='oth-button'><a href={`mailto:${email}`}
+                    <button className='oth-button'><a href={`mailto:${email}?subject=Mail from portfolio visiter`}
                                                       style={{textDecoration:'none',backgroundColor:'inherit',color:'inherit'}}>
                                                       send Mail</a>
                     </button>
