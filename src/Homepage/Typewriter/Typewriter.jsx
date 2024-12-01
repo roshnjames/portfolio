@@ -2,41 +2,39 @@ import React, { useEffect, useState } from "react";
 import './Typewriter.css';
 
 const Typewriter = () => {
-  const textArray = ["hi...","i am Roshin", " developer !"]; // Texts to display
-  const [text, setText] = useState(""); // Current text being displayed
-  const [isDeleting, setIsDeleting] = useState(false); // Flag to check if deleting
-  const [loopIndex, setLoopIndex] = useState(0); // Index of the current text
-  const [typingSpeed, setTypingSpeed] = useState(150); // Speed of typing/deleting
+  const textArray = ["hi...","i am Roshin", " developer !"];
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopIndex, setLoopIndex] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
 
   useEffect(() => {
     const handleTyping = () => {
-      const currentText = textArray[loopIndex % textArray.length]; // Current text to display
+      const currentText = textArray[loopIndex % textArray.length];
 
       if (isDeleting) {
-        // Deleting logic
+        // Deleting
         setText((prev) => prev.slice(0, prev.length - 1));
-        setTypingSpeed(100); // Faster deleting speed
+        setTypingSpeed(100);
       } else {
-        // Writing logic
+        // Writing
         setText((prev) => currentText.slice(0, prev.length + 1));
-        setTypingSpeed(150); // Typing speed
+        setTypingSpeed(150);
       }
 
-      // When the text is fully written, switch to deleting mode
       if (!isDeleting && text === currentText) {
-        setTimeout(() => setIsDeleting(true), 1000); // Pause before deleting
+        setTimeout(() => setIsDeleting(true), 1000);
       }
 
-      // When the text is fully deleted, move to the next text
       if (isDeleting && text === "") {
         setIsDeleting(false);
-        setLoopIndex((prev) => prev + 1); // Move to the next text
+        setLoopIndex((prev) => prev + 1);
       }
     };
 
     const timer = setTimeout(handleTyping, typingSpeed);
 
-    return () => clearTimeout(timer); // Cleanup timeout
+    return () => clearTimeout(timer);
   }, [text, isDeleting, loopIndex, typingSpeed, textArray]);
 
   return (
