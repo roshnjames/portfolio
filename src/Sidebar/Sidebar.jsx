@@ -5,14 +5,16 @@ import linkedin from '../assets/icons/linkedin.png'
 import './Sidebar.css'
 
 const Sidebar = () => {
-  const loc=window.location.pathname
+  let loc=window.location.hash
+  loc =loc.replace('#','')
+  
   return (
     <div id='sidebar-div' className='sidebar-main' onClick={(e)=>{e.stopPropagation()}}>
         <div className='sidebar-content'>
 
          <nav>
             <ul>
-            {loc !== '/portfolio/' && <li><NavLink to='/portfolio/'>home</NavLink></li>}
+            {(loc !== '/portfolio') && <li><NavLink to='/portfolio'>home</NavLink></li>}
             {loc !== '/about' && <li><NavLink to='/about'>about</NavLink></li>}
             {loc !== '/exp' && <li><NavLink to='/exp'>exp</NavLink></li>}
             {loc !== '/edu' && <li><NavLink to='/edu'>edu</NavLink></li>}

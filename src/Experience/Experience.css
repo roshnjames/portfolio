@@ -12,7 +12,7 @@
     background-color: inherit;
     box-shadow: -2px 2px 1.5cap rgb(5, 30, 142);
     display:flex;
-    overflow:scroll;
+    overflow:auto;
     flex-grow: 0;
     flex-shrink: 0;
     flex-direction: row;
@@ -40,7 +40,7 @@
 }
 
 /* card component */
-.Card{
+.exp-card{
     margin-top: 1.5%;
     margin-left:2.8%;
     background-color: rgb(6, 36, 95);
@@ -57,7 +57,7 @@
     flex-shrink: 0;
   }
   
-  .Card:hover{
+  .exp-card:hover{
       border: 0.1px solid rgb(156, 193, 209);
       background-color: rgb(6, 23, 61);
       transform: scale(1.3,1.3);
@@ -65,7 +65,7 @@
       z-index:400;
   }
 
-  .Card .bgpic-section{
+  .exp-bgpic-section{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@
 
   }
 
-  .Card .details-section{
+  .exp-details-section{
     font-size:1.1em;
     font-weight: bold;
     font-family:monospace;
@@ -88,7 +88,7 @@
     padding:10%;
     overflow: hidden;
   }
-.index{
+.exp-index{
     border:2px solid hsl(229, 54%, 39%);
     background-color: hsl(229, 54%, 39%);
     border-radius:50%;
@@ -113,7 +113,7 @@
     margin-top:3%;
   }
 
-  .doc-button{
+  .exp-doc-button{
     border:1px solid hsl(225, 65%, 80%);
     background-color: hsl(209, 51%, 30%);
     border-radius:10%;
@@ -128,14 +128,14 @@
     z-index:100;
     position:absolute;
   }
-  .doc-button:hover{
+  .exp-doc-button:hover{
     background-color: hsl(201, 84%, 60%);
     cursor:pointer;
   }
 
 
 /* heading of the page */
-.heading-banner {
+.exp-heading-banner {
     left: 6vw;
     top: 50vh; /* Start far above the visible screen */
     width: fit-content;
@@ -164,7 +164,7 @@
 }
 
 
-.heading-text{
+.exp-heading-text{
     margin-top:-10px;
     color:rgb(17, 254, 230);
     font-size:3em;
@@ -184,17 +184,18 @@
         min-height: 89%;
         flex-direction: column;
     }
-    .Card {
+    .exp-main-div .exp-card {
         margin-top: 3.5%;
         margin-left: 0.5%;
         height: 65%;
         max-height: 75%;
-        width: 95%;
+        min-width:95%;
         border-radius: 25px;
         overflow: hidden;
     }
     
-    .Card:hover {
+    
+    .exp-card:hover {
         width: 80%;
         height: 60%;
         transform: translate(-50%, -50%) scale(1, 1); /* Scale and center */
@@ -217,7 +218,7 @@
             opacity: 1; /* Fully visible */
         }
     }
-    .index{
+    .exp-index{
         background-color: hsl(256, 30%, 30%);
         height:12%;
         width:20%;
@@ -236,15 +237,15 @@
         min-height: 87%;
         flex-direction: column;
     }
-    .Card {
+    .exp-card {
         margin-top: 3.5%;
         margin-left: 1.5%;
         height: 65%;
         max-height: 75%;
-        width: 90%;
+        min-width: 90%;
         border-radius: 25px;
     }
-    .Card:hover {
+    .exp-card:hover {
         width: 85%;
         height: 75%;
         transform: translate(-50%, -50%) scale(1, 1);
@@ -267,7 +268,7 @@
             opacity: 1; /* Fully visible */
         }
     }
-    .heading-text{
+    .exp-heading-text{
         font-size:3.5em;
     }
     

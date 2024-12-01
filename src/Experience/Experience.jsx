@@ -30,9 +30,9 @@ const Experience = () => {
 
   return (
     <>
-      <div className="heading-banner">
+      <div className="exp-heading-banner">
         {heading.map((char, index) => (
-          <span className="heading-text" key={index}>
+          <span className="exp-heading-text" key={index}>
             {char}
           </span>
         ))}
@@ -40,12 +40,12 @@ const Experience = () => {
 
       <div className="exp-main-div">
         {experiences.map((exp, index) => (
-          <div className="Card" key={index}>
+          <div className="exp-card" key={index}>
             <div
-              className="bgpic-section"
+              className="exp-bgpic-section"
               style={{ backgroundImage: `url(${exp.image})` }}
             />
-            <div className="details-section">
+            <div className="exp-details-section">
                 <ul key={index}>
                     <li>{exp.company}</li>
                     <li>{exp.position}</li>
@@ -53,9 +53,9 @@ const Experience = () => {
                     <li>{exp.location}</li>
                 </ul>
             </div>
-            <div className="index">{index + 1}</div>
+            <div className="exp-index">{index + 1}</div>
                 {exp.docs?
-                  <button className="doc-button" onClick={() => showPopup(exp.docs)}>
+                  <button className="exp-doc-button" onClick={() => showPopup(exp.docs)}>
                   doc
                   </button>
                 :undefined}
