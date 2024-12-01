@@ -196,13 +196,11 @@
     
     
     .exp-card:hover {
-        width: 80%;
-        height: 60%;
-        transform: translate(-50%, -50%) scale(1, 1); /* Scale and center */
-        position: fixed; /* Fixed positioning to center it on the viewport */
+        transform: translate(-50%, -50%) scale(0.86, 1); /* Scale and center */
+        position: fixed;
         top: 50%;
         left: 48%;
-        z-index: 1000; /* Bring to the top */
+        z-index: 1000;
     }
     @keyframes dropBanner {
         0% {
