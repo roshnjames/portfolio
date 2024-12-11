@@ -180,6 +180,8 @@
         padding:2% 2% 2% 2%;
         width:73%;
         min-height: 89%;
+        border:none;
+        box-shadow: none;
         flex-direction: column;
     }
     .certs-card {
@@ -195,11 +197,11 @@
     .certs-card:hover {
         width: 80%;
         height: 60%;
-        transform: translate(-50%, -50%) scale(1, 1); /* Scale and center */
-        position: fixed; /* Fixed positioning to center it on the viewport */
+        transform: translate(-50%, -50%) scale(1, 1);
+        position: fixed;
         top: 50%;
         left: 48%;
-        z-index: 2000; /* Bring to the top */
+        z-index: 2000;
     }
 
     @keyframes certsdropBanner {

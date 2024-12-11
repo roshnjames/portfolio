@@ -183,6 +183,8 @@
         width:73%;
         min-height: 89%;
         flex-direction: column;
+        border:none;
+        box-shadow: none;
     }
     .exp-main-div .exp-card {
         margin-top: 3.5%;
