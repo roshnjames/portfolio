@@ -16,6 +16,13 @@ const Experience = () => {
       image: elxsi,
       docs:elxsi_certificate,
     },
+    {
+      company: 'Tata Elxsi',
+      position: 'Engineer',
+      time: 'Dec 24 - Present',
+      location: 'Trivandrum',
+      image: elxsi,
+    },
   ];
 
   ////////////////////////////
