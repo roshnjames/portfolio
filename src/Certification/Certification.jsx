@@ -7,6 +7,9 @@ import c from '../assets/certification/wallpaper/c.png';
 import dbms from '../assets/certification/wallpaper/dbms.png';
 import java from '../assets/certification/wallpaper/java.png';
 import js from '../assets/certification/wallpaper/js.png';
+import leetcode100 from '../assets/certification/wallpaper/leetcode-100.gif';
+import leetcode50 from '../assets/certification/wallpaper/leetcode-50.gif';
+
 import python from '../assets/certification/wallpaper/python.jpeg';
 
 // certificates imports
@@ -15,6 +18,7 @@ import java_oop from '../assets/certification/certificates/java_oop.png';
 import js_beg from '../assets/certification/certificates/javascript_crash.png';
 import nptel_c from '../assets/certification/certificates/nptel_c.png';
 import nptel_dbms from '../assets/certification/certificates/nptel_dbms.png';
+
 
 
 
@@ -111,6 +115,11 @@ const Certification = () => {
                 :undefined}
             </div>
         ))}
+        {/* leetcode badges */}
+        <div className="certs-card">
+          <div className="certs-bgpic-section" style={{backgroundImage:`url(${leetcode50})`,height:'48%',backgroundSize:'contain'}}></div>
+          <div className="certs-bgpic-section" style={{backgroundImage:`url(${leetcode100})`,height:'48%',backgroundSize:'contain',}}></div>
+        </div>
         {popup && <Popup visible={popup} doc={doc} closeFunc={setPopup}/>}
 
       </div>

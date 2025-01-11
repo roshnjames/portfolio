@@ -76,7 +76,7 @@
     height:40%;
     width:100%;
     filter: brightness(54%) sepia(30%) hue-rotate(180deg) saturate(1.5);
-
+    overflow: none;
   }
 
   .certs-card .certs-details-section{
