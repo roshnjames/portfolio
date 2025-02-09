@@ -18,7 +18,7 @@ const Experience = () => {
     },
     {
       company: 'Tata Elxsi',
-      position: 'Engineer',
+      position: 'Software Engineer',
       time: 'Dec 24 - Present',
       location: 'Trivandrum',
       image: elxsi,
