@@ -1,8 +1,2 @@
-const aboutme = "Hello, I am Roshin James, a self-taught software developer with solid foundation and experience in Python. " +
-"Having completed a Master’s degree in Computer Applications (MCA) from College of Engineering Trivandrum, " +
-"I am passionate about creating impactful and efficient solutions, eager to embrace new challenges, expand " +
-"my knowledge, and contribute meaningfully to projects. As a fresher, I am actively seeking opportunities " +
-"to grow and make a positive impact in the tech world.";
-
-
-export default aboutme
+const aboutme = "👋 Hi, I'm Roshin James, a self-taught developer who enjoys learning new things and building useful applications. 💡 I love exploring new technologies, solving problems, and turning ideas into reality. 🚀 I'm always looking to improve my skills, work on interesting projects, and grow as a developer.";
+export default aboutme;
